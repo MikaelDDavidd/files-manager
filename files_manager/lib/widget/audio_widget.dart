@@ -9,9 +9,7 @@ import 'package:flutter/src/widgets/framework.dart';
 class AudioWidget extends StatelessWidget {
   AudioWidget({super.key});
 
-  final List<TestModel> heros = [
-    TestModel("assets/a-arte-da-guerra.mp3", "A arte da Guerra"),
-  ];
+  final List<Media> medias = [];
 
   /*final List<Map> media =
       List.generate(1000000, (index) => {"id": index, "name": "Product $index"})
@@ -27,7 +25,7 @@ class AudioWidget extends StatelessWidget {
               childAspectRatio: 1,
               crossAxisSpacing: 20,
               mainAxisSpacing: 20),
-          itemCount: heros.length,
+          itemCount: medias.length,
           itemBuilder: (BuildContext ctx, index) {
             return Container(
               alignment: Alignment.center,
